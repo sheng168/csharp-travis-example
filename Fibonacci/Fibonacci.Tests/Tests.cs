@@ -9,7 +9,7 @@ namespace Fibonacci.Tests
         {
             var generator = new FibonacciGenerator();
 
-            Assert.Equal(generator.Fibonacci(5), 4); // break test
+            Assert.Equal(generator.Fibonacci(5), 5);
         }
 
         [Fact]
@@ -18,6 +18,14 @@ namespace Fibonacci.Tests
             var generator = new FibonacciGenerator();
 
             Assert.Equal(generator.Fibonacci(6), 8);
+        }
+
+        [Fact]
+        public void Get_20th_number()
+        {
+            var generator = new FibonacciGenerator();
+
+            Assert.Equal(generator.Fibonacci(20), 6765);
         }
     }
 }
