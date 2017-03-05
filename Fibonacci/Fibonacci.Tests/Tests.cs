@@ -19,5 +19,13 @@ namespace Fibonacci.Tests
 
             Assert.Equal(generator.Fibonacci(6), 8);
         }
+
+        [Fact]
+        public void Get_20th_number()
+        {
+            var generator = new FibonacciGenerator();
+
+            Assert.Equal(generator.Fibonacci(20), 6765);
+        }
     }
 }
